@@ -1,0 +1,11 @@
+'App\Entity\User':  
+    user_0:
+        email: admin@chimichange.com
+        roles: [ROLE_ADMIN]
+        password: \$argon2id\$v=19\$m=65536,t=4,p=1\$q2zEDhevmTQ22Cu3spXVVQ\$N+8u5Ojm/yKO6jkuRquGGSWwj2aY4X1USycXcM88zts
+
+    user_1:
+        email: client1@chimichange.com
+        roles: [ROLE_CLIENT]
+        password: \$argon2id\$v=19\$m=65536,t=4,p=1\$SyOjS8EOhpSka+DrmQJv7g\$ORtoj2jpAXFY5Jw4l1Cam3XTPXjSBVUwY80S+IN4MwI
+                  
