@@ -9,7 +9,7 @@ use Doctrine\ORM\EntityManagerInterface;
 
 class RateService
 {
-    private EntityManagerInterface $entityManager;
+    private $entityManager;
     private $rate;
 
     /**
