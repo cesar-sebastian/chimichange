@@ -40,9 +40,15 @@
 
 `> docker-compose exec php bin/console hautelook:fixtures:load`
 
-- Load rates (process would be run background each x time)
+- Load rates from fixer.io (process would be run background each x time)
 
 `> docker-compose exec php bin/console rate:load`
 
-- Test: try calling one of the services from an API client, ie: GET /users or POST /login
+- Documentation API REST
+
+`> https//:localhost/docs`
+
+- Run Tests
+
+`> docker-compose exec php bin/phpunit`
 

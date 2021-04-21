@@ -10,6 +10,7 @@ use App\Controller\CashDeposit;
 use App\Controller\CashExchange;
 use Symfony\Component\Validator\Constraints as Assert;
 use App\Dto\ExchangeInput;
+use App\Dto\DepositInput;
 
 /**
  * @ORM\Entity(repositoryClass=CashRepository::class)
@@ -21,7 +22,8 @@ use App\Dto\ExchangeInput;
  *              "method"="POST",
  *              "path"="/deposit",
  *              "controller"=CashDeposit::class,
- *              "security"="is_granted('ROLE_CLIENT')"
+ *              "security"="is_granted('ROLE_CLIENT')",
+ *              "input"=DepositInput::CLASS
  *          },
  *          "exchange"={
  *              "method"="POST",
