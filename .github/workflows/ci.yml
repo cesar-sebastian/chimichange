@@ -34,7 +34,7 @@ jobs:
             - name: Check HTTPS reachability
               run: curl  -vk -o /dev/null https://localhost
             - name: JWT
-              run: docker-compose exec -T php php sh -c '
+              run: docker-compose exec -T php sh -c '
                       set -e
                       apk add openssl
                       mkdir -p config/jwt
