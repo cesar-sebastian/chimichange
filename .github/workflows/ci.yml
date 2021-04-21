@@ -34,6 +34,6 @@ jobs:
             - name: Check HTTPS reachability
               run: curl  -vk -o /dev/null https://localhost
             - name: PHPUnit
-              run: docker-compose exec -T php bin/phpunit
+              run: docker-compose exec -T php php bin/phpunit
             - name: Jest
               run: docker-compose exec -T pwa yarn test --passWithNoTests

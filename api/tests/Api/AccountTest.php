@@ -12,7 +12,7 @@ class AccountTest extends ApiTestCase
     {
         $client = self::createClient();
 
-        $response = $client->request('POST', '/accounts', [
+        $client->request('POST', '/accounts', [
             'headers' => ['Content-Type' => 'application/json'],
             'json' => [
                 'email' => 'clientTest@chimichange.com',
@@ -37,12 +37,5 @@ class AccountTest extends ApiTestCase
 
         $this->assertResponseStatusCodeSame(422);
         $this->assertResponseHeaderSame('content-type', 'application/ld+json; charset=utf-8');
-
-//        self::assertJsonContains([
-//            '@context' => '/contexts/ConstraintViolationList',
-//            '@type' => 'ConstraintViolationList',
-//            'hydra:title' => 'An error occurred',
-//            'hydra:description' => 'email: This value is not a valid email address.',
-//        ]);
     }
 }
